@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Typography, Row, Col, Tag, Space } from 'antd';
+import { Typography, Row, Col, Tag } from 'antd';
 import { api } from '../../services/api';
 import { Skill } from '../../types';
 
