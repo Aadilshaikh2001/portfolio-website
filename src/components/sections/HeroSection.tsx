@@ -6,7 +6,7 @@ import { api } from '../../services/api';
 import { Profile } from '../../types';
 import { MOCK_PROFILE, SOCIAL_LINKS } from '../../utils/constants';
 
-const { Title, Text, Paragraph } = Typography;
+const { Title, Paragraph } = Typography;
 
 interface HeroSectionProps {
     initialData?: Profile | null;

@@ -4,7 +4,7 @@ import { GithubOutlined, GlobalOutlined, EyeOutlined } from '@ant-design/icons';
 import { api } from '../../services/api';
 import { Project } from '../../types';
 
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph } = Typography;
 const { Meta } = Card;
 
 const ProjectsSection: React.FC = () => {

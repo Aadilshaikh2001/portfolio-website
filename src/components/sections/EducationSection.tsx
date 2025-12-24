@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Typography, List, Card, Row, Col, Badge } from 'antd';
+import { Typography, List, Card, Row, Col } from 'antd';
 import { BookOutlined, SafetyCertificateOutlined } from '@ant-design/icons';
 import { api } from '../../services/api';
 import { Education, Certification } from '../../types';

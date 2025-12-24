@@ -17,7 +17,7 @@ import './App.css';
 import { api } from './services/api';
 import { Profile, Testimonial, Volunteering } from './types';
 import { MOCK_PROFILE } from './utils/constants';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const { Content } = Layout;
 

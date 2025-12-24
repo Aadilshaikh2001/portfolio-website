@@ -4,7 +4,7 @@ import { ClockCircleOutlined } from '@ant-design/icons';
 import { api } from '../../services/api';
 import { Experience } from '../../types';
 
-const { Title, Text, Paragraph } = Typography;
+const { Title, Text } = Typography;
 const { useBreakpoint } = Grid;
 
 const ExperienceSection: React.FC = () => {
