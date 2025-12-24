@@ -22,7 +22,7 @@ const EducationSection: React.FC = () => {
                 setEducation([
                     {
                         id: 1,
-                        institution: 'Algoma University',
+                        institution_name: 'Algoma University',
                         degree: 'Post-Graduate Diploma',
                         field_of_study: 'IT Project Management',
                         start_date: '2024-01-01',
@@ -30,7 +30,7 @@ const EducationSection: React.FC = () => {
                     },
                     {
                         id: 2,
-                        institution: 'KALOL INSTITUTE',
+                        institution_name: 'KALOL INSTITUTE',
                         degree: 'Bachelor of Engineering',
                         field_of_study: 'Computer Engineering',
                         start_date: '2019-05-01',
@@ -38,9 +38,9 @@ const EducationSection: React.FC = () => {
                     }
                 ]);
                 setCertifications([
-                    { id: 1, name: 'Characteristics of a Great Scrum Master', issuer: 'LinkedIn', issue_date: '2023-01-01' },
-                    { id: 2, name: 'Project Management Foundations', issuer: 'LinkedIn', issue_date: '2023-01-01' },
-                    { id: 3, name: 'Foundations of Project Management', issuer: 'Google', issue_date: '2023-01-01' }
+                    { id: 1, certification_name: 'Characteristics of a Great Scrum Master', issuing_organization: 'LinkedIn', issue_date: '2023-01-01' },
+                    { id: 2, certification_name: 'Project Management Foundations', issuing_organization: 'LinkedIn', issue_date: '2023-01-01' },
+                    { id: 3, certification_name: 'Foundations of Project Management', issuing_organization: 'Google', issue_date: '2023-01-01' }
                 ]);
             }
         };
@@ -62,7 +62,7 @@ const EducationSection: React.FC = () => {
                             renderItem={item => (
                                 <List.Item>
                                     <Card hoverable>
-                                        <Title level={5}>{item.institution}</Title>
+                                        <Title level={5}>{item.institution_name}</Title>
                                         <Text strong>{item.degree}</Text> in <Text>{item.field_of_study}</Text>
                                         <br />
                                         <Text type="secondary">
@@ -82,8 +82,8 @@ const EducationSection: React.FC = () => {
                                 <List.Item>
                                     <List.Item.Meta
                                         avatar={<SafetyCertificateOutlined style={{ fontSize: 24, color: '#52c41a' }} />}
-                                        title={item.name}
-                                        description={item.issuer}
+                                        title={item.certification_name}
+                                        description={item.issuing_organization}
                                     />
                                 </List.Item>
                             )}
