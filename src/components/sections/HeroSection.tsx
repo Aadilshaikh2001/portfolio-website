@@ -65,7 +65,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ initialData }) => {
                             style={{ textAlign: 'left' }}
                         >
                             <Title level={1} style={{ color: 'white', marginBottom: 0, fontSize: 'clamp(2rem, 5vw, 4rem)' }}>
-                                Hi, I'm <span style={{ color: '#52c41a' }}>{profile?.name}</span>
+                                Hi, I'm <span style={{ color: '#52c41a' }}>{profile?.full_name}</span>
                             </Title>
                             <Title level={3} style={{ color: 'rgba(255,255,255,0.8)', marginTop: 10, fontSize: 'clamp(1.2rem, 3vw, 2rem)' }}>
                                 {profile?.title}
@@ -89,7 +89,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ initialData }) => {
 
                             <div style={{ marginTop: 30 }}>
                                 <Space size="middle">
-                                    <motion.a whileHover={{ y: -5 }} href={profile?.linkedin || SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontSize: 24 }}>
+                                    <motion.a whileHover={{ y: -5 }} href={profile?.linkedin_url || SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontSize: 24 }}>
                                         <LinkedinOutlined />
                                     </motion.a>
                                     <motion.a whileHover={{ y: -5 }} href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontSize: 24 }}>
